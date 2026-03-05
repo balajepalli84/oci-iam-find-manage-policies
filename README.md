@@ -30,9 +30,7 @@ It also flags situations where direct resolution is not possible (any-user, tag 
 | API-action block | `Allow group X to {TerminateInstance} in tenancy` | Resolved to users via group membership |
 | `any-user` | `Allow any-user to manage objects in compartment X` | Listed as `possible_permissions` for every user |
 | `any-group` | `Allow any-group to manage buckets in tenancy` | Listed as `possible_permissions` for every user |
-| Tag condition | `Allow group Ops to manage instances where tag.Env='prod'` | Listed as `possible_permissions` (conditional) |
-| `dynamic-group` | `Allow dynamic-group FnGroup to manage objects in tenancy` | Collected in `unresolved_statements` |
-| `service` | `Allow service objectstorage to manage keys in tenancy` | Collected in `unresolved_statements` |
+
 
 The `manage` check uses a word-boundary regex — no false positives on words like `management`.
 
