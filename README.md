@@ -18,8 +18,7 @@ need to know which **users** actually have that access. This script does the ful
 Policy statement → Group → Identity Domain → Users
 ```
 
-It also flags situations where direct resolution is not possible (any-user, tag conditions,
-dynamic groups) so nothing is missed.
+It also flags situations where direct resolution is not possible (any-user, tag conditions)
 
 ---
 
